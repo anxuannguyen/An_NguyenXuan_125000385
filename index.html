@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!-- ====================================================================
+       THÔNG TIN CƠ BẢN & SEO TỐI ƯU HÓA
+       ==================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Healing Coffee - Tinh Hoa Cà Phê Thủ Công & Không Gian Thư Thái</title>
+    <meta name="description"
+        content="Brew & Chill Coffee - Trải nghiệm cà phê đặc sản Specialty Coffee nguyên bản từ Cầu Đất, trà hoa quả tươi mát và không gian thư giãn hiện đại.">
+    <meta name="keywords" content="cà phê, specialty coffee, cold brew, brew and chill, quán cà phê đẹp, trà trái cây">
+    <meta name="author" content="Brew & Chill Team">
+
+    <!-- Favicon biểu tượng cà phê vector SVG từ thư mục assets -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Google Fonts: Playfair Display (Heading sang trọng) & Plus Jakarta Sans (Nội dung hiện đại) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Thư viện hiệu ứng Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Tệp CSS riêng biệt ở thư mục gốc -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ====================================================================
+       1. THÀNH PHẦN NGỮ NGHĨA: <header>
+       Chứa Logo thương hiệu, Thanh điều hướng <nav> và Nút tương tác
+       ==================================================================== -->
+    <header class="site-header animate__animated animate__fadeInDown">
+        <div class="container header-container">
+
+            <!-- Logo thương hiệu -->
+            <a href="#hero" class="brand-logo" aria-label="Brew & Chill Coffee Trang chủ">
+                <span class="logo-icon"><i class="fa-solid fa-mug-hot"></i></span>
+                <span class="logo-text">Brew <span class="logo-accent">&</span> Chill</span>
+            </a>
+
+            <!-- Checkbox ẩn để xử lý Menu Hamburger trên Mobile bằng 100% CSS (Không dùng JS) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Mở đóng menu điều hướng">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </label>
+
+            <!-- ================================================================
+           2. THÀNH PHẦN NGỮ NGHĨA: <nav>
+           Menu điều hướng chính của website
+           ================================================================ -->
+            <nav class="main-navigation" aria-label="Điều hướng chính">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Trang Chủ</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Thực Đơn</a></li>
+                    <li class="nav-item"><a href="#golden-hour" class="nav-link">Giờ Vàng</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Câu Chuyện</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">Đánh Giá</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Liên Hệ</a></li>
+                </ul>
+
+                <!-- Nút CTA trên Header -->
+                <div class="header-cta">
+                    <a href="#menu" class="btn btn-primary btn-sm">
+                        <span>Đặt Món Ngay</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ====================================================================
+       3. THÀNH PHẦN NGỮ NGHĨA: <main>
+       Vùng chứa toàn bộ nội dung trọng tâm của trang
+       ==================================================================== -->
+    <main class="main-content">
+
+        <!-- ==================================================================
+         4. THÀNH PHẦN NGỮ NGHĨA: <section> - HERO SECTION
+         Khu vực giới thiệu ấn tượng đầu trang
+         ================================================================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+
+            <div class="container hero-container">
+
+                <!-- Cột nội dung chữ Hero -->
+                <div class="hero-content">
+                    <div class="hero-badge animate__animated animate__fadeInDown">
+                        <span class="badge-sparkle">✨</span>
+                        <span>Khám phá hương vị mùa vụ 2026</span>
+                    </div>
+
+                    <h1 class="hero-title animate__animated animate__fadeInUp">
+                        Nghệ Thuật <span class="highlight-text">Cà Phê</span> Thủ Công & Không Gian Thư Thái
+                    </h1>
+
+                    <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
+                        Mỗi giọt cà phê tại <strong>Brew & Chill</strong> là kết tinh từ những hạt Arabica tuyển chọn
+                        vùng cao nguyên Cầu Đất, ủ mộc tỉ mỉ qua đôi bàn tay điêu luyện của các nghệ nhân Barista.
+                    </p>
+
+                    <!-- Nút hành động CTA -->
+                    <div class="hero-actions animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="#menu" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <span>Khám Phá Thực Đơn</span>
+                        </a>
+                        <a href="#about" class="btn btn-outline btn-lg">
+                            <i class="fa-solid fa-compass"></i>
+                            <span>Câu Chuyện Của Chúng Tôi</span>
+                        </a>
+                    </div>
+
+                    <!-- Các chỉ số nổi bật (Highlights) -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <strong class="stat-number">100%</strong>
+                            <span class="stat-label">Hạt Mộc Hữu Cơ</span>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <strong class="stat-number">24H+</strong>
+                            <span class="stat-label">Ủ Lạnh Cold Brew</span>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <strong class="stat-number">4.9 ★</strong>
+                            <span class="stat-label">12,000+ Khách Hài Lòng</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cột hình ảnh ly cà phê signature Hero -->
+                <div class="hero-media animate__animated animate__fadeInRight">
+                    <div class="hero-card-glow"></div>
+                    <figure class="hero-figure">
+                        <img src="assets/images/hero-espresso.jpg"
+                            alt="Ly Espresso thủ công đậm vị tại Brew and Chill Coffee" class="hero-image"
+                            loading="eager">
+                        <figcaption class="hero-floating-card">
+                            <div class="floating-icon"><i class="fa-solid fa-award"></i></div>
+                            <div class="floating-text">
+                                <strong>Best Seller 2026</strong>
+                                <span>Salted Caramel Cold Foam</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+         5. THÀNH PHẦN NGỮ NGHĨA: <aside>
+         Phần thông tin phụ: Giờ vàng giảm giá, ưu đãi chớp nhoáng & tin tức nhanh
+         ================================================================== -->
+        <aside id="golden-hour" class="deal-aside-banner" aria-label="Chương trình ưu đãi giờ vàng">
+            <div class="container aside-container">
+                <div class="aside-badge animate__animated animate__pulse animate__infinite">
+                    <i class="fa-solid fa-bolt"></i> GIỜ VÀNG ĐẶC BIỆT
+                </div>
+
+                <div class="aside-info">
+                    <h2 class="aside-title">
+                        Happy Hour: <mark class="aside-mark">Giảm 30% Toàn Bộ Menu Cold Brew & Trà Độc Quyền</mark>
+                    </h2>
+                    <p class="aside-desc">
+                        Áp dụng từ <time datetime="14:00">14:00</time> đến <time datetime="17:00">17:00</time> từ Thứ
+                        Hai đến Thứ Sáu khi thưởng thức tại quán hoặc mang đi.
+                    </p>
+                </div>
+
+                <div class="aside-action">
+                    <a href="#menu" class="btn btn-accent">
+                        <span>Nhận Mã "CHILL30"</span>
+                        <i class="fa-solid fa-ticket"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ==================================================================
+         6. THÀNH PHẦN NGỮ NGHĨA: <section> - FEATURED MENU
+         Chứa các <article> là thẻ sản phẩm đồ uống tiêu biểu
+         ================================================================== -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+
+                <!-- Tiêu đề Section -->
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Hương Vị Đặc Trưng</span>
+                    <h2 class="section-title">Thực Đơn Được Yêu Thích Nhất</h2>
+                    <p class="section-description">
+                        Được pha chế tinh tế từ nguyên liệu tự nhiên hảo hạng, đem lại trải nghiệm trọn vẹn từng giác
+                        quan.
+                    </p>
+                </div>
+
+                <!-- Bộ lọc danh mục hoàn toàn bằng Pure CSS Radio Buttons (Không dùng JS) -->
+                <div class="menu-filter-wrapper">
+                    <input type="radio" name="menu-category" id="cat-all" class="category-radio" checked>
+                    <input type="radio" name="menu-category" id="cat-coffee" class="category-radio">
+                    <input type="radio" name="menu-category" id="cat-coldbrew" class="category-radio">
+                    <input type="radio" name="menu-category" id="cat-tea" class="category-radio">
+
+                    <div class="filter-controls">
+                        <label for="cat-all" class="filter-btn filter-all"><i class="fa-solid fa-border-all"></i> Tất
+                            Cả</label>
+                        <label for="cat-coffee" class="filter-btn filter-coffee"><i class="fa-solid fa-mug-saucer"></i>
+                            Cà Phê Pha Máy</label>
+                        <label for="cat-coldbrew" class="filter-btn filter-coldbrew"><i class="fa-solid fa-cube"></i>
+                            Cold Brew Đặc Sản</label>
+                        <label for="cat-tea" class="filter-btn filter-tea"><i class="fa-solid fa-leaf"></i> Trà Trái
+                            Cây</label>
+                    </div>
+
+                    <!-- Lưới sản phẩm sử dụng CSS Grid -->
+                    <div class="menu-grid">
+
+                        <!-- ============================================================
+                 THÀNH PHẦN NGỮ NGHĨA: <article> 1 - Cold Brew Cam Vàng
+                 ============================================================ -->
+                        <article class="drink-card cat-item-coldbrew" data-category="coldbrew">
+                            <div class="card-badge">Bán Chạy Nhất</div>
+                            <figure class="card-figure">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/drink-coldbrew-orange.jpg"
+                                        alt="Ly Cold Brew Cam Vàng ủ 24 giờ" class="card-img" loading="lazy">
+                                </div>
+                                <figcaption class="sr-only">Cold Brew Cam Vàng mật ong ngọt dịu sảng khoái</figcaption>
+                            </figure>
+
+                            <div class="card-body">
+                                <div class="card-meta">
+                                    <span class="drink-tag"><i class="fa-solid fa-temperature-arrow-down"></i> Lạnh
+                                        24h</span>
+                                    <div class="drink-rating" aria-label="Đánh giá 5 sao">
+                                        <i class="fa-solid fa-star"></i> 5.0 (420)
+                                    </div>
+                                </div>
+
+                                <h3 class="drink-title">Cold Brew Cam Vàng Mật Ong</h3>
+                                <p class="drink-desc">
+                                    Cà phê Arabica ủ lạnh nguyên chất 24h phối cùng lát cam vàng mọng nước và giọt mật
+                                    ong hoa nhãn thanh nhẹ.
+                                </p>
+
+                                <div class="card-footer">
+                                    <div class="price-box">
+                                        <span class="price-current">58.000₫</span>
+                                        <span class="price-original">68.000₫</span>
+                                    </div>
+                                    <button type="button" class="btn-card-add"
+                                        aria-label="Thêm Cold Brew Cam Vàng vào đơn hàng">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ============================================================
+                 THÀNH PHẦN NGỮ NGHĨA: <article> 2 - Salted Caramel Macchiato
+                 ============================================================ -->
+                        <article class="drink-card cat-item-coffee" data-category="coffee">
+                            <div class="card-badge badge-signature">Signature</div>
+                            <figure class="card-figure">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/drink-salted-caramel.jpg"
+                                        alt="Ly Salted Caramel Macchiato thơm ngậy béo" class="card-img" loading="lazy">
+                                </div>
+                                <figcaption class="sr-only">Salted Caramel Macchiato với lớp caramel muối hồng kem sữa
+                                </figcaption>
+                            </figure>
+
+                            <div class="card-body">
+                                <div class="card-meta">
+                                    <span class="drink-tag"><i class="fa-solid fa-fire"></i> Nóng / Đá</span>
+                                    <div class="drink-rating" aria-label="Đánh giá 4.9 sao">
+                                        <i class="fa-solid fa-star"></i> 4.9 (385)
+                                    </div>
+                                </div>
+
+                                <h3 class="drink-title">Salted Caramel Macchiato</h3>
+                                <p class="drink-desc">
+                                    Sự hòa quyện tuyệt đỉnh giữa Espresso đậm đà, sữa tươi thanh trùng và lớp sốt
+                                    caramel muối hồng Himalaya béo ngậy.
+                                </p>
+
+                                <div class="card-footer">
+                                    <div class="price-box">
+                                        <span class="price-current">62.000₫</span>
+                                    </div>
+                                    <button type="button" class="btn-card-add"
+                                        aria-label="Thêm Salted Caramel Macchiato vào đơn hàng">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ============================================================
+                 THÀNH PHẦN NGỮ NGHĨA: <article> 3 - Matcha Latte Kyoto
+                 ============================================================ -->
+                        <article class="drink-card cat-item-tea" data-category="tea">
+                            <div class="card-badge badge-new">Mới Ra Mắt</div>
+                            <figure class="card-figure">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/drink-matcha-latte.jpg"
+                                        alt="Ly Matcha Latte Kyoto chuẩn vị Nhật Bản" class="card-img" loading="lazy">
+                                </div>
+                                <figcaption class="sr-only">Matcha Latte nhập khẩu Kyoto Nhật Bản thơm ngát</figcaption>
+                            </figure>
+
+                            <div class="card-body">
+                                <div class="card-meta">
+                                    <span class="drink-tag"><i class="fa-solid fa-leaf"></i> 100% Uji Matcha</span>
+                                    <div class="drink-rating" aria-label="Đánh giá 4.8 sao">
+                                        <i class="fa-solid fa-star"></i> 4.8 (290)
+                                    </div>
+                                </div>
+
+                                <h3 class="drink-title">Matcha Latte Uji Kyoto</h3>
+                                <p class="drink-desc">
+                                    Bột trà xanh Uji thượng hạng tuyển chọn từ Kyoto, kết hợp lớp sữa tươi đánh bông mịn
+                                    bồng bềnh êm dịu.
+                                </p>
+
+                                <div class="card-footer">
+                                    <div class="price-box">
+                                        <span class="price-current">59.000₫</span>
+                                    </div>
+                                    <button type="button" class="btn-card-add"
+                                        aria-label="Thêm Matcha Latte Uji Kyoto vào đơn hàng">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ============================================================
+                 THÀNH PHẦN NGỮ NGHĨA: <article> 4 - Espresso Con Panna
+                 ============================================================ -->
+                        <article class="drink-card cat-item-coffee" data-category="coffee">
+                            <figure class="card-figure">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/drink-espresso-conpanna.jpg"
+                                        alt="Espresso kem tươi Con Panna" class="card-img" loading="lazy">
+                                </div>
+                                <figcaption class="sr-only">Espresso Con Panna lớp kem whipping béo mịn</figcaption>
+                            </figure>
+
+                            <div class="card-body">
+                                <div class="card-meta">
+                                    <span class="drink-tag"><i class="fa-solid fa-bolt"></i> Đậm Vị Mộc</span>
+                                    <div class="drink-rating" aria-label="Đánh giá 4.9 sao">
+                                        <i class="fa-solid fa-star"></i> 4.9 (180)
+                                    </div>
+                                </div>
+
+                                <h3 class="drink-title">Espresso Con Panna Cổ Điển</h3>
+                                <p class="drink-desc">
+                                    Double shot Espresso đậm chất Ý phủ lớp kem tươi whipping béo mịn bồng bềnh, tạo nên
+                                    độ cân bằng hoàn hảo.
+                                </p>
+
+                                <div class="card-footer">
+                                    <div class="price-box">
+                                        <span class="price-current">49.000₫</span>
+                                    </div>
+                                    <button type="button" class="btn-card-add"
+                                        aria-label="Thêm Espresso Con Panna vào đơn hàng">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ============================================================
+                 THÀNH PHẦN NGỮ NGHĨA: <article> 5 - Trà Đào Cam Sả
+                 ============================================================ -->
+                        <article class="drink-card cat-item-tea" data-category="tea">
+                            <div class="card-badge">Thanh Nhiệt</div>
+                            <figure class="card-figure">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/drink-tra-dao-cam-sa.jpg"
+                                        alt="Trà Đào Cam Sả giòn thơm" class="card-img" loading="lazy">
+                                </div>
+                                <figcaption class="sr-only">Trà Đào Cam Sả thanh mát giải nhiệt mùa hè</figcaption>
+                            </figure>
+
+                            <div class="card-body">
+                                <div class="card-meta">
+                                    <span class="drink-tag"><i class="fa-solid fa-snowflake"></i> Thanh Mát</span>
+                                    <div class="drink-rating" aria-label="Đánh giá 4.9 sao">
+                                        <i class="fa-solid fa-star"></i> 4.9 (512)
+                                    </div>
+                                </div>
+
+                                <h3 class="drink-title">Trà Đào Cam Sả Hoàng Gia</h3>
+                                <p class="drink-desc">
+                                    Trà đen Ceylon thượng hạng nấu cùng củ sả tươi, nước cốt cam sành mọng nước kèm
+                                    những miếng đào giòn sần sật.
+                                </p>
+
+                                <div class="card-footer">
+                                    <div class="price-box">
+                                        <span class="price-current">52.000₫</span>
+                                        <span class="price-original">59.000₫</span>
+                                    </div>
+                                    <button type="button" class="btn-card-add"
+                                        aria-label="Thêm Trà Đào Cam Sả vào đơn hàng">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ============================================================
+                 THÀNH PHẦN NGỮ NGHĨA: <article> 6 - Sparkling Berry Tea
+                 ============================================================ -->
+                        <article class="drink-card cat-item-tea" data-category="tea">
+                            <figure class="card-figure">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/drink-sparkling-berry.jpg"
+                                        alt="Trà Dâu Rừng Sparkling mát lạnh" class="card-img" loading="lazy">
+                                </div>
+                                <figcaption class="sr-only">Trà dâu rừng kết hợp soda sủi tăm tươi mới</figcaption>
+                            </figure>
+
+                            <div class="card-body">
+                                <div class="card-meta">
+                                    <span class="drink-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Sủi Bọt
+                                        Gas</span>
+                                    <div class="drink-rating" aria-label="Đánh giá 4.7 sao">
+                                        <i class="fa-solid fa-star"></i> 4.7 (215)
+                                    </div>
+                                </div>
+
+                                <h3 class="drink-title">Sparkling Wild Berry Tea</h3>
+                                <p class="drink-desc">
+                                    Trà hoa quả ngâm cùng dâu tằm, quả mâm xôi tự nhiên và nước khoáng có gas tạo cảm
+                                    giác bừng tỉnh sảng khoái.
+                                </p>
+
+                                <div class="card-footer">
+                                    <div class="price-box">
+                                        <span class="price-current">55.000₫</span>
+                                    </div>
+                                    <button type="button" class="btn-card-add"
+                                        aria-label="Thêm Sparkling Wild Berry Tea vào đơn hàng">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+         7. THÀNH PHẦN NGỮ NGHĨA: <section> - ABOUT US (CÂU CHUYỆN THƯƠNG HIỆU)
+         ================================================================== -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+
+                <!-- Cột hình ảnh minh họa quy trình Barista -->
+                <div class="about-media">
+                    <figure class="about-figure">
+                        <img src="assets/images/about-barista.jpg"
+                            alt="Nghệ nhân Barista tại Brew & Chill đang pha cà phê V60 thủ công" class="about-img"
+                            loading="lazy">
+                        <figcaption class="about-caption">
+                            Nghệ nhân Barista kiểm soát nhiệt độ nước ở mức chuẩn xác 92°C để chiết xuất trọn vẹn từng
+                            tầng hương vị.
+                        </figcaption>
+                    </figure>
+
+                    <div class="experience-card">
+                        <span class="exp-number">10+</span>
+                        <span class="exp-text">Năm kinh nghiệm gìn giữ văn hóa cà phê mộc</span>
+                    </div>
+                </div>
+
+                <!-- Cột nội dung văn bản giới thiệu -->
+                <div class="about-content">
+                    <span class="section-subtitle">Về Brew & Chill Coffee</span>
+                    <h2 class="section-title">Hành Trình Khơi Dậy Đam Mê Cà Phê Mộc</h2>
+
+                    <p class="about-lead">
+                        Tại Brew & Chill, chúng tôi tin rằng một ly cà phê ngon không đơn thuần là thức uống nạp năng
+                        lượng,
+                        mà là chiếc cầu nối giữa thiên nhiên, tâm hồn và những khoảnh khắc sẻ chia chân thật.
+                    </p>
+
+                    <div class="about-features">
+
+                        <article class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <div class="feature-text">
+                                <h4 class="feature-title">Vùng Nguyên Liệu Cầu Đất Độc Quyền</h4>
+                                <p>Những trái cà phê Arabica chín đỏ được thu hái thủ công trên độ cao 1.650m so với mực
+                                    nước biển.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                            <div class="feature-text">
+                                <h4 class="feature-title">Công Nghệ Rang Mộc Thủ Công</h4>
+                                <p>Rang mẻ nhỏ tỉ mỉ, không tẩm ướp hương liệu tổng hợp, bảo toàn hương hoa trái tự
+                                    nhiên nguyên bản.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-couch"></i></div>
+                            <div class="feature-text">
+                                <h4 class="feature-title">Không Gian Thư Thái Acoustic</h4>
+                                <p>Nơi giao thoa giữa ánh đèn vàng ấm cúng, giai điệu êm dịu và hương thơm quyến rũ lan
+                                    tỏa.</p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Ghé Thăm Cửa Hàng Gần Nhất</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+         8. THÀNH PHẦN NGỮ NGHĨA: <section> - REVIEWS (ĐÁNH GIÁ TỪ KHÁCH HÀNG)
+         Chứa các <article> review của khách hàng
+         ================================================================== -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Tiếng Lòng Thực Khách</span>
+                    <h2 class="section-title">Hơn 12.000+ Tách Cà Phê Làm Say Lòng Khách Quý</h2>
+                    <p class="section-description">
+                        Lắng nghe những chia sẻ chân thành từ những người bạn luôn đồng hành cùng Brew & Chill mỗi ngày.
+                    </p>
+                </div>
+
+                <!-- Lưới các bài viết đánh giá -->
+                <div class="reviews-grid">
+
+                    <!-- Review 1 -->
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="Xếp hạng 5 sao">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="review-quote">
+                            "Cold Brew Cam Vàng ở đây thật sự gây nghiện! Vị chua thanh tự nhiên của cam hòa cùng hậu vị
+                            ngọt thơm sâu của hạt Arabica Cầu Đất. Không gian quán lại cực kỳ yên tĩnh, rất thích hợp để
+                            làm việc cả buổi sáng."
+                        </blockquote>
+                        <footer class="review-author">
+                            <img src="assets/images/avatar-hoang-lan.jpg"
+                                alt="Chân dung Hoàng Lan - Khách hàng thân thiết" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <strong class="author-name">Hoàng Lan</strong>
+                                <span class="author-role">Content Creator</span>
+                                <time datetime="2026-10-14" class="review-date">14/10/2026</time>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="Xếp hạng 5 sao">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="review-quote">
+                            "Là một người đam mê Specialty Coffee hơn 8 năm, tôi đánh giá rất cao tay nghề Barista tại
+                            Brew & Chill. Espresso chiết xuất hoàn hảo với lớp crema dày óng ánh, không bị khét đắng mà
+                            giữ được trọn nốt hương hạt dẻ."
+                        </blockquote>
+                        <footer class="review-author">
+                            <img src="assets/images/avatar-tuan-minh.jpg"
+                                alt="Chân dung Tuấn Minh - Coffee Roaster" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <strong class="author-name">Trần Tuấn Minh</strong>
+                                <span class="author-role">Coffee Enthusiast & Architect</span>
+                                <time datetime="2026-10-17" class="review-date">17/10/2026</time>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="Xếp hạng 5 sao">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="review-quote">
+                            "Món Matcha Latte Kyoto và Trà Đào Cam Sả ngon xuất sắc. Nhân viên phục vụ ân cần, niềm nở
+                            và chu đáo. Đặc biệt là chương trình Giờ Vàng giảm 30% vào buổi chiều thật sự rất kinh tế
+                            cho học sinh, sinh viên và dân văn phòng!"
+                        </blockquote>
+                        <footer class="review-author">
+                            <img src="assets/images/avatar-thuc-anh.jpg"
+                                alt="Chân dung Thục Anh - Khách hàng tại Hà Nội" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <strong class="author-name">Nguyễn Thục Anh</strong>
+                                <span class="author-role">Marketing Executive</span>
+                                <time datetime="2026-10-18" class="review-date">18/10/2026</time>
+                            </div>
+                        </footer>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+         9. CÂU HỎI THƯỜNG GẶP (SEMANTIC TAGS: <details> & <summary> - Không dùng JS)
+         ================================================================== -->
+        <section class="faq-section">
+            <div class="container faq-container">
+
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Giải Đáp Thắc Mắc</span>
+                    <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+                </div>
+
+                <div class="faq-list">
+
+                    <details class="faq-item" open>
+                        <summary class="faq-question">
+                            <span>Hạt cà phê tại Brew & Chill có nguồn gốc từ đâu?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>100% hạt cà phê của chúng tôi được canh tác theo chuẩn hữu cơ tại vùng đồi Cầu Đất (Đà
+                                Lạt) ở độ cao 1.650m, được kiểm soát chặt chẽ từ khâu thu hái đến khi rang mộc trên dây
+                                chuyền hiện đại.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Quán có chính sách tích điểm và ưu đãi hội viên không?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Có! Quý khách chỉ cần đọc số điện thoại khi thanh toán để tích lũy 10% giá trị hóa đơn.
+                                Tích đủ 50 điểm sẽ được tặng ngay 01 ly đồ uống bất kỳ trên toàn hệ thống.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Giờ vàng ưu đãi 30% áp dụng như thế nào?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Khung giờ vàng áp dụng từ <time datetime="14:00">14:00</time> đến <time
+                                    datetime="17:00">17:00</time> từ Thứ Hai đến Thứ Sáu cho tất cả các dòng sản phẩm
+                                Cold Brew đặc sản và Trà Trái Cây tươi.</p>
+                        </div>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+         10. BẢN TIN NHẬN KHUYẾN MÃI (NEWSLETTER)
+         ================================================================== -->
+        <section class="newsletter-section">
+            <div class="container newsletter-container">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                    <h2 class="newsletter-title">Đăng Ký Nhận E-Voucher Giảm 50.000₫</h2>
+                    <p class="newsletter-desc">Nhận ngay mã giảm giá cho đơn hàng đầu tiên cùng những câu chuyện độc
+                        quyền về văn hóa cà phê.</p>
+                </div>
+
+                <form class="newsletter-form" action="#newsletter-success" method="GET">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Nhập địa chỉ email của bạn..." required
+                            aria-label="Địa chỉ email nhận khuyến mãi">
+                        <button type="submit" class="btn btn-primary">
+                            <span>Đăng Ký Ngay</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <small class="form-privacy"><i class="fa-solid fa-shield-halved"></i> Cam kết bảo mật thông tin
+                        100%, không gửi thư rác.</small>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================
+       11. THÀNH PHẦN NGỮ NGHĨA: <footer>
+       Chân trang chứa thông tin liên hệ <address>, thời gian <time>, copyright
+       ==================================================================== -->
+    <footer id="contact" class="site-footer">
+        <div class="container">
+
+            <!-- Lưới nội dung chân trang (CSS Grid) -->
+            <div class="footer-grid">
+
+                <!-- Cột 1: Thông tin thương hiệu -->
+                <div class="footer-col brand-col">
+                    <a href="#hero" class="brand-logo footer-logo">
+                        <span class="logo-icon"><i class="fa-solid fa-mug-hot"></i></span>
+                        <span class="logo-text">Brew <span class="logo-accent">&</span> Chill</span>
+                    </a>
+                    <p class="footer-about">
+                        Không gian thưởng thức cà phê thủ công đỉnh cao, nơi hương vị nguyên bản hòa quyện cùng sự an
+                        yên trong tâm hồn bạn.
+                    </p>
+                    <div class="social-links" aria-label="Liên kết mạng xã hội">
+                        <a href="https://facebook.com" class="social-btn" aria-label="Facebook Brew & Chill"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" class="social-btn" aria-label="Instagram Brew & Chill"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" class="social-btn" aria-label="TikTok Brew & Chill"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://youtube.com" class="social-btn" aria-label="YouTube Brew & Chill"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cột 2: Đường dẫn nhanh -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Khám Phá</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero"><i class="fa-solid fa-angle-right"></i> Trang Chủ</a></li>
+                        <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Thực Đơn Đặc Sắc</a></li>
+                        <li><a href="#golden-hour"><i class="fa-solid fa-angle-right"></i> Ưu Đãi Giờ Vàng</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-angle-right"></i> Nghệ Thuật Rang Mộc</a></li>
+                        <li><a href="#reviews"><i class="fa-solid fa-angle-right"></i> Cảm Nhận Thực Khách</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Giờ mở cửa -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Thời Gian Phục Vụ</h3>
+                    <ul class="footer-schedule">
+                        <li class="schedule-item">
+                            <span class="day">Thứ Hai - Thứ Sáu:</span>
+                            <time class="time" datetime="07:00/22:30">07:00 - 22:30</time>
+                        </li>
+                        <li class="schedule-item">
+                            <span class="day">Thứ Bảy - Chủ Nhật:</span>
+                            <time class="time" datetime="06:30/23:00">06:30 - 23:00</time>
+                        </li>
+                        <li class="schedule-item">
+                            <span class="day">Giờ Vàng (Happy Hour):</span>
+                            <time class="time text-accent" datetime="14:00/17:00">14:00 - 17:00</time>
+                        </li>
+                    </ul>
+                    <div class="store-status">
+                        <span class="status-indicator"></span>
+                        <span>Đang Mở Cửa Phục Vụ Quý Khách</span>
+                    </div>
+                </div>
+
+                <!-- Cột 4: Thông tin liên hệ ngữ nghĩa <address> -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Liên Hệ Trực Tiếp</h3>
+                    <address class="footer-address">
+                        <div class="address-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>128 Đường Cà Phê Mộc, Quận 1, TP. Hồ Chí Minh</span>
+                        </div>
+                        <div class="address-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:0909123456" class="contact-link">0909.123.456 (Hotline 24/7)</a>
+                        </div>
+                        <div class="address-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:hello@brewandchill.vn" class="contact-link">hello@brewandchill.vn</a>
+                        </div>
+                        <div class="address-item">
+                            <i class="fa-solid fa-wifi"></i>
+                            <span>Wifi Free: <strong>BrewChill_VIP</strong> (Pass: <em>chilltime</em>)</span>
+                        </div>
+                    </address>
+                </div>
+
+            </div>
+
+            <!-- Bản quyền và pháp lý chân trang -->
+            <div class="footer-bottom">
+                <div class="bottom-copyright">
+                    <small>&copy; 2026 Brew & Chill Coffee Co., Ltd. Tất cả quyền được bảo lưu.</small>
+                </div>
+                <div class="bottom-links">
+                    <a href="#privacy">Chính Sách Bảo Mật</a>
+                    <span class="sep" aria-hidden="true">•</span>
+                    <a href="#terms">Điều Khoản Dịch Vụ</a>
+                    <span class="sep" aria-hidden="true">•</span>
+                    <a href="#sitemap">Sơ Đồ Trang</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Nút cuộn nhanh lên đầu trang (100% Pure CSS) -->
+    <a href="#hero" class="back-to-top" aria-label="Cuộn lên đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+</body>
+
+</html>
